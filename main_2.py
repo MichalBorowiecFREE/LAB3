@@ -21,7 +21,7 @@ twb_P = 'D'
 wwb_L = 0
 wwb_P = 1
 
-n = 100
+n = 10
 
 def generujTabliceGeometrii(p,k,n):
     tmp = (k-p) / (n-1)
@@ -34,7 +34,7 @@ def generujTabliceGeometrii(p,k,n):
             [m_wezly],
             [i+1, i * tmp + p],
         ])
-    for i in range (1,n,1):
+    for i in range (2,n,1):
         m_elementy = np.block([
             [m_elementy],
             [i,i,i+1]
